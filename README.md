@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-[Visit Production Build]("http://www.soenke-schaarschmidt.de/soenke/build/index.html")
+[Visit]("http://www.soenke-schaarschmidt.de/soenke/build/index.html")
 
 My Single Page Application Portfolio created using React
 
