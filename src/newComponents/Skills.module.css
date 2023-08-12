@@ -1,0 +1,40 @@
+.container {
+    margin-top: 30px;
+    position: relative;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+ul {
+    line-height: 1.6;
+    padding-left: 15px;
+}
+
+.box li {
+    font-size: 16px;
+}
+
+.backgroundBox {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: -1;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+    color: rgba(243, 243, 243, 0.66);
+    font-size: 170px;
+}
+
+@media screen and (max-width: 750px) {
+    .backgroundBox {
+        font-size: 130px;
+    }
+}

@@ -1,0 +1,17 @@
+.container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container h3 {
+    margin-top: 50px;
+}
+
+.workBox {
+    background-color: #ECEBEB;
+}
+
+.workBox details {
+    padding: 0;
+    transition: background-color 200ms;
+}

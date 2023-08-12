@@ -1,0 +1,58 @@
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 40, 40, 0.3);
+    overflow: scroll;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.close:hover {
+    color: #676767;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 10px;
+    border: #282828 solid 2px;
+    background-color: #F9F9F9;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+}
+
+.button:hover {
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    padding: 30px 30px 30px 30px;
+    max-width: 840px;
+    background-color: #F9F9F9;
+    color: #282828;
+    text-align: justify;
+}
+
+.container p {
+    line-height: 1.6;
+}

@@ -1,0 +1,57 @@
+.header {
+    height: 65vh;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #2674D0;
+}
+
+.logo {
+    justify-self: start;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+}
+
+.info {
+    max-width: 380px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: none;
+    }
+
+    .header {
+        height: 60vh;
+        margin: 0 15px 0 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .infoBox {
+        justify-self: end;
+    }
+
+    .logo {
+        width: 100px;
+        justify-self: start;
+    }
+}

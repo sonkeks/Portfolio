@@ -1,0 +1,30 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F9F9;
+  color: #282828;
+  margin: 0;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-variant-caps: all-small-caps;
+  color: #2674D0;
+}
+
+label {
+  font-weight: bold;
+  color: #677684;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
