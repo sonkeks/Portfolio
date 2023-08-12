@@ -1,64 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acd523a3-a475-4746-80bf-f9f0a773ca79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/scrollHelpers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Contact.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/CourseAccordion/CourseAccordion.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/CourseAccordion/CourseAccordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Experience.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Experience.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/ImprintModal/ImprintModal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/ImprintModal/ImprintModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Project.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/ProjectCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Projects.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Projects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/SideMenu/SideMenu.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/SideMenu/SideMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Skills.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Skills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Waves.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/Waves.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/WorkItem/WorkItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newComponents/WorkItem/WorkItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Blubble1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Blubble2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Blubble3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/BlubbleMockUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/BlubbleMockUps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Creape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Portfolio1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Portfolio2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="acd523a3-a475-4746-80bf-f9f0a773ca79" name="Changes" comment="upload local version">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +84,16 @@
       <workItem from="1690980531008" duration="6726000" />
       <workItem from="1690997476222" duration="10496000" />
       <workItem from="1691054063213" duration="16851000" />
-      <workItem from="1691744298509" duration="54750000" />
+      <workItem from="1691744298509" duration="55491000" />
     </task>
+    <task id="LOCAL-00001" summary="upload local version">
+      <created>1691806241005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691806241005</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,5 +109,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="upload local version" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload local version" />
   </component>
 </project>
