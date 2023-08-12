@@ -1,5 +1,6 @@
 .header {
-    height: 65vh;
+    --dynamic-height: 65dvh;
+    height: var(--dynamic-height, 65vh);
     display: flex;
     gap: 45px;
     justify-content: center;
@@ -39,11 +40,10 @@
     }
 
     .header {
-        height: 60vh;
         margin: 0 15px 0 15px;
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 5px;
     }
 
     .infoBox {

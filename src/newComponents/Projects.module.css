@@ -238,7 +238,7 @@ a:hover {
     .projectCardGrid {
         padding: 8px 8px 25px;
         flex-wrap: nowrap;
-        overflow-block: scroll;
+        overflow-y: scroll;
         justify-content: start;
         -ms-overflow-style: none;
         scrollbar-width: none;

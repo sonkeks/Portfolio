@@ -3,12 +3,20 @@
 }
 
 .workItem {
-    padding: 10px;
+    padding: 15px;
     display: grid;
     grid-template-columns: auto 1fr 30%;
     align-items: center;
     font-weight: bold;
     gap: 10px;
+}
+
+.workItem::-webkit-details-marker, .workItem::marker {
+    display: none;
+}
+
+summary {
+    list-style: none;
 }
 
 .workItem:hover {
@@ -39,7 +47,7 @@
 .workContent {
     padding-left: 50px;
     font-weight: normal;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .workContent ul {
@@ -49,7 +57,7 @@
 
 .workContent li {
     font-size: 14px;
-    padding: 5px;
+    padding: 5px 15px 5px 5px;
 }
 
 .workOpen {
