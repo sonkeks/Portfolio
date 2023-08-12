@@ -148,12 +148,13 @@ a:hover {
 }
 
 .contactButton {
-    width: 120px;
+    width: fit-content;
+    padding: 8px 15px 8px 15px;
+    white-space: nowrap;
     background-color: #F9F9F9;
     font-size: 16px;
     font-weight: bold;
     color: #2674D0;
-    height: 35px;
     border: #2674D0 solid 2px;
 }
 
