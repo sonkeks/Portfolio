@@ -1,6 +1,9 @@
 import styles from "./Experience.module.css";
 import WorkItem from "./WorkItem/WorkItem";
 import CourseAccordion from "./CourseAccordion/CourseAccordion";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import {useEffect} from "react";
 
 const workPlaces = [
     {
@@ -27,29 +30,38 @@ const workPlaces = [
 ]
 
 const Experience = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
         <div id="experience" className={styles.container}>
-            <h1>Experience</h1>
-            <h2>Work and Courses</h2>
-            <h3>Where I have worked</h3>
-            <div className={styles.workBox}>
-                {workPlaces.map((workPlace, index) => {
-                    return (
-                        <WorkItem
-                            key={index}
-                            position={workPlace.position}
-                            title={workPlace.title}
-                            link={workPlace.link}
-                            date={workPlace.date}
-                            infoList={workPlace.infoList}
-                            index={index}
-                        />
-                    )
-                })}
+            <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                <h1>Experience</h1>
+                <h2>Work and Courses</h2>
             </div>
-            <h3>Important University Courses</h3>
-            <CourseAccordion />
+            <div data-aos="fade-up" data-aos-offset="160" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+                <h3>Where I have worked</h3>
+                <div className={styles.workBox}>
+                    {workPlaces.map((workPlace, index) => {
+                        return (
+                            <WorkItem
+                                key={index}
+                                position={workPlace.position}
+                                title={workPlace.title}
+                                link={workPlace.link}
+                                date={workPlace.date}
+                                infoList={workPlace.infoList}
+                                index={index}
+                            />
+                        )
+                    })}
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+                <h3>Important University Courses</h3>
+                <CourseAccordion/>
+            </div>
         </div>
     )
 }

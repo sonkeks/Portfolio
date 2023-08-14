@@ -21,10 +21,10 @@ const Home = () => {
             <Waves/>
             <div className={styles.margin}>
                 <div className={styles.homeBody}>
-                    <Skills/>
-                    <Projects/>
-                    <Experience/>
-                    <Contact/>
+                    <Skills />
+                    <Projects data-aos="fade-up"/>
+                    <Experience data-aos="fade-up"/>
+                    <Contact data-aos="fade-up"/>
                 </div>
             </div>
         </div>

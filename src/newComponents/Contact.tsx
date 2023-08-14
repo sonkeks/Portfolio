@@ -100,8 +100,10 @@ const Contact = () => {
 
     return (
         <div id="contact" className={styles.container}>
-            <h1>Contact</h1>
-            <h2>Let's get in Touch</h2>
+            <div>
+                <h1>Contact</h1>
+                <h2>Let's get in Touch</h2>
+            </div>
             <form onSubmit={submitForm} className={styles.form}>
                 <div className={styles.inputGroup}>
                     <input autoComplete="off" placeholder="Name" id="name" name="name" value={name}

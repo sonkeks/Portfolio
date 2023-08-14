@@ -9,14 +9,23 @@ import {
     DiPython,
     DiReact
 } from "react-icons/di";
+import {useEffect} from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div className={styles.container} id="skills">
-            <h1>Skills</h1>
-            <h2>Development & More</h2>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                <h1>Skills</h1>
+                <h2>Development & More</h2>
+            </div>
             <div className={styles.box}>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                     <h3>Languages</h3>
                     <ul>
                         <li>Java</li>
@@ -27,7 +36,7 @@ const Skills = () => {
                         <li>SQL</li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                     <h3>Frameworks</h3>
                     <ul>
                         <li>React</li>
@@ -40,7 +49,7 @@ const Skills = () => {
                         <li>Firebase</li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                     <h3>Tools</h3>
                     <ul>
                         <li>Git</li>
@@ -49,7 +58,7 @@ const Skills = () => {
                         <li>Maya</li>
                     </ul>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                     <h3>Other</h3>
                     <ul>
                         <li>Photography</li>
@@ -57,7 +66,7 @@ const Skills = () => {
                     </ul>
                 </div>
             </div>
-            <div className={styles.backgroundBox}>
+            <div className={styles.backgroundBox} data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000" data-aos-easing="ease-out-sine">
                 <DiReact/>
                 <DiJava/>
                 <DiJavascript1/>

@@ -157,7 +157,10 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
 }
 
 .buttonClear:hover {
-    opacity: 0.7;
+    cursor: pointer;
+    border: #3f4854 2px solid;
+    color: #3f4854;
+    background-color: #ECEBEB;
     transition: all .1s;
 }
 

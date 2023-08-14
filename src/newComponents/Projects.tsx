@@ -5,8 +5,14 @@ import Project from "./Project";
 import ProjectCard from "./ProjectCard";
 import {scrollPageTo} from "../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
+import {useEffect} from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Projects = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     const featuredProjects = [
         {
@@ -41,7 +47,7 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoBed color="#2674D0" size={40} />
+            icon: <IoBed color="#2674D0" size={40}/>
         },
         {
             label: "Landing Page and Booking Service",
@@ -52,7 +58,7 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoMusicalNote color="#2674D0" size={40} />
+            icon: <IoMusicalNote color="#2674D0" size={40}/>
         },
         {
             label: "Magazine Website",
@@ -63,15 +69,17 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoNewspaper color="#2674D0" size={40} />
+            icon: <IoNewspaper color="#2674D0" size={40}/>
         },
     ]
 
     return (
         <div id="projects" className={styles.container}>
-            <h1>Projects</h1>
-            <h2>What I have been Creating</h2>
-            <div className={styles.projectsContainer}>
+            <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                <h1>Projects</h1>
+                <h2>What I have been Creating</h2>
+            </div>
+            <div className={styles.projectsContainer} data-aos="fade-up" data-aos-offset="130" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                 {featuredProjects.map((project, index) => {
                     return <Project
                         key={index}
@@ -86,17 +94,21 @@ const Projects = () => {
                     />
                 })}
             </div>
-            <h2>Current Projects</h2>
-            <div className={styles.projectCardGrid}>
-            {projects.map((project, index) => {
-                return (
-                    <ProjectCard key={index} title={project.title} description={project.description} technologies={project.technologies} icon={project.icon}/>
-                )
-            })}
-            </div>
-            <div className={styles.footer}>
-                <div className={styles.phrase}>Wanna Work on a Project With me?</div>
-                <button className={styles.contactButton} onClick={() => scrollPageTo("contact")}>Contact Me</button>
+            <div>
+                <h2>Current Projects</h2>
+                <div className={styles.projectCardGrid}>
+                    {projects.map((project, index) => {
+                        return (
+                            <ProjectCard key={index} title={project.title} description={project.description}
+                                         technologies={project.technologies} icon={project.icon}
+                                         index={index}/>
+                        )
+                    })}
+                </div>
+                <div className={styles.footer}>
+                    <div className={styles.phrase}>Wanna Work on a Project With me?</div>
+                    <button className={styles.contactButton} onClick={() => scrollPageTo("contact")}>Contact Me</button>
+                </div>
             </div>
         </div>
     )
