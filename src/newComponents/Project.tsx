@@ -31,8 +31,8 @@ const Project = ({label, title, description, info, technologies, image, git, lin
                     <p>{info}</p>
                 </div>
                 <div className={styles.techStack}>
-                    {technologies.map(technology => {
-                        return <span>{technology}</span>
+                    {technologies.map((technology, index) => {
+                        return <span key={index}>{technology}</span>
                     })}
                 </div>
                 <div className={styles.links + " " + styles.footerLinks}>

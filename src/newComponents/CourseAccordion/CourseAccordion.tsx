@@ -70,8 +70,8 @@ const CourseAccordion = () => {
                     <div className={styles.courseSchool}>{course.school}</div>
                     <div className={styles.courseDate}>{course.date}</div>
                     <ul className={styles.courseInfoList}>
-                        {course.infoList.map(info => {
-                            return <li>{info}</li>
+                        {course.infoList.map((info, index) => {
+                            return <li key={index}>{info}</li>
                         })}
                     </ul>
                 </>
@@ -98,7 +98,7 @@ const CourseAccordion = () => {
         <div className={styles.coursesBox}>
             <div className={styles.coursesCol}>
                 {courses.map((course, index) => {
-                    return <div onClick={() => toggleCourseSelect(index)}
+                    return <div key={index} onClick={() => toggleCourseSelect(index)}
                                 className={styles.coursesItem + " " + (index === selectedCourseIndex ? styles.selected : "")}>{course.title}</div>
                 })}
             </div>
@@ -108,7 +108,7 @@ const CourseAccordion = () => {
             <div className={styles.smallCoursesList}>
             {courses.map((course, index) => {
                 return (
-                    <div onClick={() => toggleCourseSelect(index)}
+                    <div key={index} onClick={() => toggleCourseSelect(index)}
                          className={styles.coursesItem + " " + (index === selectedCourseIndex ? styles.selected : "")}>
                         {course.title}
                         {index === selectedCourseIndex && <div className={styles.inlineInfo}>{getCourseInfo(selectedCourseIndex)}</div>}

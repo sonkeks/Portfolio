@@ -72,8 +72,9 @@ const Projects = () => {
             <h1>Projects</h1>
             <h2>What I have been Creating</h2>
             <div className={styles.projectsContainer}>
-                {featuredProjects.map(project => {
+                {featuredProjects.map((project, index) => {
                     return <Project
+                        key={index}
                         label={project.label}
                         title={project.title}
                         description={project.description}
@@ -87,9 +88,9 @@ const Projects = () => {
             </div>
             <h2>Current Projects</h2>
             <div className={styles.projectCardGrid}>
-            {projects.map(project => {
+            {projects.map((project, index) => {
                 return (
-                    <ProjectCard title={project.title} description={project.description} technologies={project.technologies} icon={project.icon}/>
+                    <ProjectCard key={index} title={project.title} description={project.description} technologies={project.technologies} icon={project.icon}/>
                 )
             })}
             </div>

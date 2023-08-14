@@ -36,8 +36,8 @@ const WorkItem = ({position, title, link, date, infoList, index}: WorkItemProps)
             {infoList.length > 0 &&
                 <div className={styles.workContent}>
                     <ul>
-                        {infoList.map(info => {
-                            return <li>{info}</li>
+                        {infoList.map((info, index) => {
+                            return <li key={index}>{info}</li>
                         })}
                     </ul>
                 </div>

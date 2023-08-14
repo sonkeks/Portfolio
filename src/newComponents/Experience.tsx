@@ -37,6 +37,7 @@ const Experience = () => {
                 {workPlaces.map((workPlace, index) => {
                     return (
                         <WorkItem
+                            key={index}
                             position={workPlace.position}
                             title={workPlace.title}
                             link={workPlace.link}

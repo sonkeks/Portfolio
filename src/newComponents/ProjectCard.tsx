@@ -26,8 +26,8 @@ const ProjectCard = ({title, description, technologies, git, link, icon}: Projec
                     <p className={styles.infoText}>{description}</p>
                 </div>
                 <div className={styles.techStack + " " + styles.overflow}>
-                    {technologies.map(technology => {
-                        return <span>{technology}</span>
+                    {technologies.map((technology, index) => {
+                        return <span key={index}>{technology}</span>
                     })}
                 </div>
             </div>
