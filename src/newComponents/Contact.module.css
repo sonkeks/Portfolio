@@ -8,13 +8,8 @@
     margin-top: 40px;
     display: grid;
     column-gap: 10px;
-    row-gap: 5px;
+    row-gap: 8px;
     grid-template-columns: 1fr 1fr;
-}
-
-.form div {
-    width: 100%;
-    margin: 0;
 }
 
 .form div:nth-child(3) {
@@ -31,12 +26,12 @@
 
 .form div:nth-child(6) {
     grid-column: 1 / 3;
-    justify-self: end;
-    width: fit-content;
 }
 
 .inputGroup {
     position: relative;
+    width: 100%;
+    margin: 0;
 }
 
 .label {
@@ -129,38 +124,100 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
     transition: all .3s;
 }
 
+.errorMessage {
+    color: #ff3c3c;
+    position: absolute;
+    bottom: -1px;
+}
+
 .buttonRow {
+    justify-self: start;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonGroup {
+    grid-column: 1 / 2;
     display: flex;
     gap: 10px;
 }
 
 .buttonClear {
-    padding: 8px 15px 8px 15px;
+    width: 80px;
+    height: 45px;
     border: #677684 2px solid;
     color: #677684;
     font-size: 16px;
     font-weight: bold;
     background-color: #F9F9F9;
+    transition: all .1s;
 }
 
 .buttonClear:hover {
     opacity: 0.7;
+    transition: all .1s;
 }
 
 .button {
-    padding: 8px 15px 8px 15px;
+    position: relative;
+    width: 80px;
+    height: 45px;
     border: #2674D0 2px solid;
     background-color: #2674D0;
     font-weight: bold;
     font-size: 16px;
     color: #F9F9F9;
+    transition: all .1s;
 }
 
 .button:hover {
     border: #1f5fab 2px solid;
+    transition: all .1s;
     background-color: #1f5fab;
     color: #dcdcdc;
     cursor: pointer;
+}
+
+.button:disabled {
+    transition: all .1s;
+    background-color: #90b4e0;
+    border: #90b4e0 2px solid;
+}
+
+.loader {
+    position: absolute;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #90b4e0;
+    border-radius: 50%;
+    top: 6px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+.confirmationGroup {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s;
+}
+
+.successIcon {
+    color: green;
+}
+
+.errorIcon {
+    color: #ff3c3c;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 @media screen and (max-width: 600px) {
@@ -182,5 +239,13 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
 
     .form div:nth-child(6) {
         grid-column: 1 / 2;
+    }
+
+    .buttonGroup {
+        grid-column: 1 / 3;
+    }
+
+    .confirmationGroup {
+        grid-column: 1 / 3;
     }
 }
