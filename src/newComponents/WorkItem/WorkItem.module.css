@@ -25,7 +25,7 @@ summary {
 
 .workItem a {
     white-space: nowrap;
-    color: #2674D0;
+    color: var(--primary);
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ summary {
 }
 
 .workOpen {
-    background-color: rgba(106, 162, 227, 0.18);
+    background-color: var(--selected);
 }
 
 @media screen and (max-width: 600px) {

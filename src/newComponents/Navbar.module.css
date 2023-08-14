@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(249,249,249,100) 50%, rgba(249,249,249,0) 100%);
+    background-image: linear-gradient(to bottom, var(--color-background) 50%, rgba(249,249,249,0) 100%);
 }
 
 .navBar {
@@ -32,19 +32,35 @@
     cursor: pointer;
 }
 
-.navItems {
+.navItemsLeft {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.toggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggleLabel {
+    width: 35px;
+}
+
+.navItemsRight {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.navItems div {
-    color: #282828;
+.navItemsRight div {
+    color: var(--color-text);
     transition: color 200ms;
 }
 
-.navItems div:hover {
-    color: #2674D0;
+.navItemsRight div:hover {
+    color: var(--primary);
     cursor: pointer;
     transition: color 200ms;
 }
@@ -53,19 +69,24 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navBar {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding-top: 10px;
+        padding-top: 8px;
         padding-bottom: 50px;
     }
 
-    .navItems {
+    .navItemsRight {
         display: none;
     }
 
     .burgerIcon {
         display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navBar {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }

@@ -47,7 +47,7 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoBed color="#2674D0" size={40}/>
+            icon: <IoBed color="var(--primary)" size={40}/>
         },
         {
             label: "Landing Page and Booking Service",
@@ -58,7 +58,7 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoMusicalNote color="#2674D0" size={40}/>
+            icon: <IoMusicalNote color="var(--primary)" size={40}/>
         },
         {
             label: "Magazine Website",
@@ -69,7 +69,7 @@ const Projects = () => {
             image: "",
             git: "/",
             link: "/",
-            icon: <IoNewspaper color="#2674D0" size={40}/>
+            icon: <IoNewspaper color="var(--primary)" size={40}/>
         },
     ]
 

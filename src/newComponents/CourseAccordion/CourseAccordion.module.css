@@ -1,14 +1,14 @@
 .coursesBox {
-    background-color: #ECEBEB;
+    background-color: var(--tertiary);
     width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
 }
 
 .coursesItem {
-    border-left: rgba(106, 162, 227, 0.18) 5px solid;
+    border-left: var(--selected) 5px solid;
     padding: 10px;
-    color: #2674D0;
+    color: var(--primary);
     font-weight: bold;
     transition: border-left-color 200ms, background-color 200ms;
     user-select: none;
@@ -42,8 +42,8 @@ li {
 }
 
 .selected {
-    border-left: #2674D0 5px solid;
-    background-color: rgba(106, 162, 227, 0.18);
+    border-left: var(--primary) 5px solid;
+    background-color: var(--selected);
     transition: border-left-color 200ms, background-color 200ms;
 }
 
@@ -84,7 +84,7 @@ li {
 
     .inlineInfo {
         padding-top: 10px;
-        color: #282828;
+        color: var(--color-text);
         font-weight: normal;
     }
 

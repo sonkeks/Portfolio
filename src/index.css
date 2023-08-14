@@ -1,9 +1,24 @@
 body {
+  --color-background: #F9F9F9;
+  --color-text: #282828;
+  --primary: #2674D0;
+  --primary-light: #90b4e0;
+  --primary-shade: #1f5fab;
+  --secondary: #677684;
+  --secondary-light: #9cafbb;
+  --secondary-shade: #3f4854;
+  --tertiary: #ECEBEB;
+  --tertiary-light: #F3F3F3A8;
+  --tertiary-dark: #dcdcdc;
+  --selected: #6AA2E32D;
+  --shadow: #67768433;
+  --image-grayscale: 0;
+  --image-opacity: 100%;
   font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F9F9F9;
-  color: #282828;
+  background-color: var(--color-background);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -15,16 +30,58 @@ h1 {
 h2 {
   margin: 0;
   font-variant-caps: all-small-caps;
-  color: #2674D0;
+  color: var(--primary);
 }
 
 label {
   font-weight: bold;
-  color: #677684;
+  color: var(--secondary);
+}
+
+img, video {
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
+}
+
+body.dark {
+  --color-background: #282828;
+  --color-text: #F9F9F9;
+  --primary: #2689d0;
+  --primary-light: #79abd0;
+  --primary-shade: #2775ab;
+  --secondary: #677684;
+  --secondary-light: #9cafbb;
+  --secondary-shade: #3f4854;
+  --tertiary: #383838;
+  --tertiary-light: rgba(45, 45, 45, 0.66);
+  --tertiary-dark: #dcdcdc;
+  --selected: #6AA2E32D;
+  --shadow: rgba(17, 20, 23, 0.2);
+  --image-grayscale: 10%;
+  --image-opacity: 90%;
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 40px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-background: #282828;
+    --color-text: #F9F9F9;
+    --primary: #2689d0;
+    --primary-light: #79abd0;
+    --primary-shade: #2775ab;
+    --secondary: #677684;
+    --secondary-light: #9cafbb;
+    --secondary-shade: #3f4854;
+    --tertiary: #383838;
+    --tertiary-light: rgba(45, 45, 45, 0.66);
+    --tertiary-dark: #dcdcdc;
+    --selected: #6AA2E32D;
+    --shadow: rgba(17, 20, 23, 0.2);
+    --image-grayscale: 10%;
+    --image-opacity: 90%;
   }
 }

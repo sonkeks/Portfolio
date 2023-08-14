@@ -43,12 +43,12 @@
     opacity: 1;
     z-index: 2;
     font-size: 14px;
-    background-color: #F9F9F9;
+    background-color: var(--color-background);
     width: fit-content;
     font-weight: normal;
     transform: translateY(-2.2em);
     transform-origin: 0 0;
-    transition: all .3s;
+    transition: transform .3s;
 }
 
 input {
@@ -59,12 +59,11 @@ input {
     padding: 0 10px 0 10px;
     width: calc(100% - 24px);
     height: 40px;
-    background-color: #F9F9F9;
-    border: #677684 2px solid;
-    color: #282828;
+    background-color: var(--color-background);
+    border: var(--secondary) 2px solid;
+    color: var(--color-text);
     font-size: 16px;
     box-shadow: none;
-    transition: all .3s;
 }
 
 input:focus {
@@ -87,9 +86,9 @@ textarea {
     padding: 13px 10px 13px 10px;
     width: calc(100% - 24px);
     height: 180px;
-    background-color: #F9F9F9;
-    border: #677684 2px solid;
-    color: #282828;
+    background-color: var(--color-background);
+    border: var(--secondary) 2px solid;
+    color: var(--color-text);
     font-size: 16px;
     font-family: sans-serif;
     resize: none;
@@ -116,12 +115,12 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
     opacity: 1;
     z-index: 2;
     font-size: 14px;
-    background-color: #F9F9F9;
+    background-color: var(--color-background);
     width: fit-content;
     font-weight: normal;
     transform: translateY(-14.2em);
     transform-origin: 0 0;
-    transition: all .3s;
+    transition: transform .3s;
 }
 
 .errorMessage {
@@ -148,19 +147,19 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
 .buttonClear {
     width: 80px;
     height: 45px;
-    border: #677684 2px solid;
-    color: #677684;
+    border: var(--secondary) 2px solid;
+    color: var(--secondary);
     font-size: 16px;
     font-weight: bold;
-    background-color: #F9F9F9;
+    background-color: var(--color-background);
     transition: all .1s;
 }
 
 .buttonClear:hover {
     cursor: pointer;
-    border: #3f4854 2px solid;
-    color: #3f4854;
-    background-color: #ECEBEB;
+    border: var(--secondary-shade) 2px solid;
+    color: var(--secondary-shade);
+    background-color: var(--shadow);
     transition: all .1s;
 }
 
@@ -168,32 +167,32 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
     position: relative;
     width: 80px;
     height: 45px;
-    border: #2674D0 2px solid;
-    background-color: #2674D0;
+    border: var(--primary) 2px solid;
+    background-color: var(--primary);
     font-weight: bold;
     font-size: 16px;
-    color: #F9F9F9;
+    color: var(--color-background);
     transition: all .1s;
 }
 
 .button:hover {
-    border: #1f5fab 2px solid;
+    border: var(--primary-shade) 2px solid;
     transition: all .1s;
-    background-color: #1f5fab;
-    color: #dcdcdc;
+    background-color: var(--primary-shade);
+    color: var(--tertiary);
     cursor: pointer;
 }
 
 .button:disabled {
     transition: all .1s;
-    background-color: #90b4e0;
-    border: #90b4e0 2px solid;
+    background-color: var(--primary-light);
+    border: var(--primary-light) 2px solid;
 }
 
 .loader {
     position: absolute;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #90b4e0;
+    border: 5px solid var(--color-background);
+    border-top: 5px solid var(--secondary-light);
     border-radius: 50%;
     top: 6px;
     left: 22px;

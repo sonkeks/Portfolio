@@ -12,13 +12,14 @@
     gap: 15px;
 }
 
-.icon:hover {
-    cursor: pointer;
-    color: #2674D0;
+.icon {
+    transition: color .1s;
 }
 
-.logo {
-    justify-self: start;
+.icon:hover {
+    cursor: pointer;
+    color: var(--primary);
+    transition: color .1s;
 }
 
 .infoBox {
@@ -43,15 +44,10 @@
         margin: 0 15px 0 15px;
         flex-direction: column;
         text-align: center;
-        gap: 5px;
+        gap: 10px;
     }
 
     .infoBox {
         justify-self: end;
-    }
-
-    .logo {
-        width: 100px;
-        justify-self: start;
     }
 }

@@ -8,7 +8,7 @@
 }
 
 .workBox {
-    background-color: #ECEBEB;
+    background-color: var(--tertiary);
 }
 
 .workBox details {

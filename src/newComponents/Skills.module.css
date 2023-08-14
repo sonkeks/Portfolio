@@ -1,5 +1,5 @@
 .container {
-    margin-top: 80px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -29,7 +29,7 @@ ul {
     top: 100px;
     height: 100%;
     width: 100%;
-    color: rgba(243, 243, 243, 0.66);
+    color: var(--tertiary-light);
     font-size: 170px;
 }
 
