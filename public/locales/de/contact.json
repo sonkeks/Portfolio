@@ -1,0 +1,14 @@
+{
+  "contact": "Kontakt",
+  "subtitle": "Schreib mir eine Nachricht",
+  "name": "Vorname",
+  "surname": "Nachname",
+  "email": "E-Mail-Adresse",
+  "subject": "Betreff",
+  "message": "Nachricht",
+  "clear": "Löschen",
+  "send": "Senden",
+  "fieldError": "Bitte {{fieldName}} angeben",
+  "success": "Die Email wurde erfolgreich versendet",
+  "error": "Entschuldigung, irgendetwas ist schiefgelaufen. Probiere es nochmal"
+}

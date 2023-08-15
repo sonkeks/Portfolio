@@ -1,0 +1,21 @@
+{
+  "experience": "Erfahrung",
+  "subtitle": "Arbeit und Kurse",
+  "where": "Wo Ich beschäftigt war",
+  "courses": "Wichtige Kurse aus dem Studium",
+  "positionBachelor": "Internationale Medieninformatik",
+  "titleBachelor": "HTW Berlin",
+  "dateBachelor": "Oktober 2020 - April 2024",
+  "info1Bachelor": "Internationaler Studiengang der Medieninformatik mit Themenbereichen aus der Informatik, Wirtschaft, Design und den Medien auf Deutsch und Englisch",
+  "info2Bachelor": "Beinhaltete ein 4-Monatiges Praktikum und ein Projektsemester mit abschließender Pitch-Präsentation",
+  "info3Bachelor": "Vorgeschlagenes Bachelor-Thesis Thema: Entwicklung einer Suchmaschine mit einer gleichberechtigten Anzeige von Suchergebnissen unabhängig der verwendeten Genderform",
+  "positionTS": "Praktikum als Full Stack Entwickler",
+  "titleTS": "TroedelSpende",
+  "dateTS": "April 2022 - August 2022",
+  "info1TS": "Pflege und Weiterentwicklung eines Java Spring Backend und eines React TypeScript basierten Frontend welches das Windy CSS Framework nutzt",
+  "info2TS": "Arbeit in einer kleinen agilen Teamstruktur und Arbeitsweise",
+  "info3TS": "Bewerben des Produkts auf Start-up Events und Veranstaltungen von non-profit Organisationen",
+  "positionMaster": "Master in Informatik",
+  "titleMaster": "Uni",
+  "dateMaster": "Bald"
+}

@@ -8,28 +8,31 @@ import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
 import {useEffect} from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import {useTranslation} from "react-i18next";
 
 const Projects = () => {
     useEffect(() => {
         AOS.init();
     }, []);
 
+    const { t } = useTranslation("projects");
+
     const featuredProjects = [
         {
-            label: "Book Reading Club App",
-            title: "Blubble",
-            description: "A native Android & iOS app for founding, finding and organizing book clubs and their discussions. Communicate meeting dates with all club members, share notes and interests by commenting or uploading photos and guide your discussions with synchronous timers.",
-            info: "This was the semesters second best university group project in my study program created in collaboration with Diva-e.",
+            label: t("blubbleLabel"),
+            title: t("blubbleTitle"),
+            description: t("blubbleDescription"),
+            info: t("blubbleInfo"),
             technologies: ["React", "Ionic", "Capacitor", "Firebase", "Socket.io", "Docker"],
             image: Blubble,
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
             link: ""
         },
         {
-            label: "Simple DIY Social Network",
-            title: "Creape",
-            description: "A web app for posting and sharing DIYs as well as getting instructions on how to recreate posted projects. Save your favorite DIYs and follow or message other users if you want to get to know more about their DIY ideas.",
-            info: "A project alongside a course at university.",
+            label: t("creapeLabel"),
+            title: t("creapeTitle"),
+            description: t("creapeDescription"),
+            info: t("creapeInfo"),
             technologies: ["JavaScript", "Express.js", "MongoDB", "Socket.io"],
             image: Creape,
             git: "https://github.com/LeanderAK/WTAT1_Group_B",
@@ -39,9 +42,9 @@ const Projects = () => {
 
     const projects = [
         {
-            label: "Landing Page and Booking Service",
-            title: "Hotel Website",
-            description: "Web application including a booking service for a Hotel in northern Germany",
+            label: "...",
+            title: t("hotelTitle"),
+            description: t("hotelDescription"),
             info: "...",
             technologies: ["JavaScript", "Express.js", "MongoDB", "Hello"],
             image: "",
@@ -50,9 +53,9 @@ const Projects = () => {
             icon: <IoBed color="var(--primary)" size={40}/>
         },
         {
-            label: "Landing Page and Booking Service",
-            title: "Guitar Chord Finder",
-            description: "Swift Notes App with chord finding algorithm and chord pattern display",
+            label: "...",
+            title: t("guitarTitle"),
+            description: t("guitarDescription"),
             info: "...",
             technologies: ["Swift", "SwiftUI", "Apple", "Xcode"],
             image: "",
@@ -61,9 +64,9 @@ const Projects = () => {
             icon: <IoMusicalNote color="var(--primary)" size={40}/>
         },
         {
-            label: "Magazine Website",
-            title: "Magazine Website",
-            description: "A Magazine Landing Page with 3D Elements ",
+            label: "...",
+            title: t("magazineTitle"),
+            description: t("magazineDescription"),
             info: "...",
             technologies: ["React", "TypeScript", "Three.js"],
             image: "",
@@ -76,8 +79,8 @@ const Projects = () => {
     return (
         <div id="projects" className={styles.container}>
             <div data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <h1>Projects</h1>
-                <h2>What I have been Creating</h2>
+                <h1>{t("projects")}</h1>
+                <h2>{t("subtitle")}</h2>
             </div>
             <div className={styles.projectsContainer} data-aos="fade-up" data-aos-offset="130" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                 {featuredProjects.map((project, index) => {
@@ -95,7 +98,7 @@ const Projects = () => {
                 })}
             </div>
             <div>
-                <h2>Current Projects</h2>
+                <h2>{t("current")}</h2>
                 <div className={styles.projectCardGrid}>
                     {projects.map((project, index) => {
                         return (
@@ -106,8 +109,8 @@ const Projects = () => {
                     })}
                 </div>
                 <div className={styles.footer}>
-                    <div className={styles.phrase}>Wanna Work on a Project With me?</div>
-                    <button className={styles.contactButton} onClick={() => scrollPageTo("contact")}>Contact Me</button>
+                    <div className={styles.phrase}>{t("wanna")}</div>
+                    <button className={styles.contactButton} onClick={() => scrollPageTo("contact")}>{t("contact")}</button>
                 </div>
             </div>
         </div>

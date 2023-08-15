@@ -2,6 +2,7 @@ import styles from "./Contact.module.css"
 import {ChangeEvent, SyntheticEvent, useState} from "react";
 import emailjs from "@emailjs/browser";
 import {FiCheckCircle, FiXCircle} from "react-icons/fi";
+import {useTranslation} from "react-i18next";
 
 const Contact = () => {
     const [name, setName] = useState<string>("");
@@ -19,6 +20,8 @@ const Contact = () => {
     const [isSending, setIsSending] = useState<boolean>(false);
     const [emailSent, setEmailSent] = useState<boolean>();
 
+    const { t } = useTranslation("contact");
+
     const formIsValid = () => {
         let fields = [name, surname, email, subject, message];
         let errors = [nameError, surnameError, emailError, subjectError, messageError];
@@ -26,10 +29,10 @@ const Contact = () => {
     }
 
     const changeField = (e: ChangeEvent<(HTMLInputElement | HTMLTextAreaElement)>, stateFunction: (state: string) => void, errorFunction: (error: string) => void) => {
-        let fieldName = e.target.name;
+        let name = t(e.target.name);
         stateFunction(e.target.value);
         if (e.target.value === "") {
-            errorFunction("Please add your " + fieldName.charAt(0).toUpperCase() + fieldName.slice(1));
+            errorFunction(t("fieldError", {fieldName: name}));
         } else {
             errorFunction("");
         }
@@ -69,14 +72,14 @@ const Contact = () => {
                 return (
                     <>
                         <FiCheckCircle className={styles.successIcon} size={30}/>
-                        <span>Email was successfully sent</span>
+                        <span>{t("success")}</span>
                     </>
                 )
             } else {
                 return (
                     <>
                         <FiXCircle className={styles.errorIcon} size={30}/>
-                        <span>Sorry, something went wrong. Please try again</span>
+                        <span>{t("error")}</span>
                     </>
                 )
             }
@@ -101,48 +104,48 @@ const Contact = () => {
     return (
         <div id="contact" className={styles.container}>
             <div>
-                <h1>Contact</h1>
-                <h2>Let's get in Touch</h2>
+                <h1>{t("contact")}</h1>
+                <h2>{t("subtitle")}</h2>
             </div>
             <form onSubmit={submitForm} className={styles.form}>
                 <div className={styles.inputGroup}>
                     <input autoComplete="off" placeholder="Name" id="name" name="name" value={name}
                            onChange={(e) => changeField(e, setName, setNameError)}/>
-                    <label htmlFor="name" className={styles.label}>Name</label>
+                    <label htmlFor="name" className={styles.label}>{t("name")}</label>
                     <small className={styles.errorMessage}>{nameError}</small>
                 </div>
                 <div className={styles.inputGroup}>
                     <input autoComplete="off" placeholder="Surname" id="surname" name="surname" value={surname}
                            onChange={(e) => changeField(e, setSurname, setSurnameError)}/>
-                    <label htmlFor="surname" className={styles.label}>Surname</label>
+                    <label htmlFor="surname" className={styles.label}>{t("surname")}</label>
                     <small className={styles.errorMessage}>{surnameError}</small>
                 </div>
                 <div className={styles.inputGroup}>
                     <input autoComplete="off" placeholder="Email" id="email" name="email" value={email}
                            onChange={(e) => changeField(e, setEmail, setEmailError)} type="email"/>
-                    <label htmlFor="email" className={styles.label}>Email Address</label>
+                    <label htmlFor="email" className={styles.label}>{t("email")}</label>
                     <small className={styles.errorMessage}>{emailError}</small>
                 </div>
                 <div className={styles.inputGroup}>
                     <input autoComplete="off" placeholder="Subject" id="subject" name="subject" value={subject}
                            onChange={(e) => changeField(e, setSubject, setSubjectError)}/>
-                    <label htmlFor="subject" className={styles.label}>Subject</label>
+                    <label htmlFor="subject" className={styles.label}>{t("subject")}</label>
                     <small className={styles.errorMessage}>{subjectError}</small>
                 </div>
                 <div className={styles.inputGroup}>
                     <textarea placeholder="Message" id="message" name="message" value={message}
                               onChange={(e) => changeField(e, setMessage, setMessageError)}/>
-                    <label htmlFor="message" className={styles.textareaLabel}>Message</label>
+                    <label htmlFor="message" className={styles.textareaLabel}>{t("message")}</label>
                     <small className={styles.errorMessage}>{messageError}</small>
                 </div>
                 <div className={styles.buttonRow}>
                     <div className={styles.buttonGroup}>
                         <button onClick={event => clearForm(event)} className={styles.buttonClear}>
-                            Clear
+                            {t("clear")}
                         </button>
                         <button disabled={!formIsValid() || isSending} type="submit" className={styles.button}>
                             {isSending && <span className={styles.loader}></span>}
-                            {!isSending && "Send"}
+                            {!isSending && t("send")}
                         </button>
                     </div>
                     <div className={styles.confirmationGroup}>

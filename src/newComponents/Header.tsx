@@ -1,16 +1,16 @@
 import styles from "./Header.module.css";
 import {AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const { t } = useTranslation("header");
     return (
         <div className={styles.header + " container"}>
             <div className={styles.infoBox}>
-                <p className={styles.info}>Hello, my name is</p>
+                <p className={styles.info}>{t('hello')}</p>
                 <h1>Sönke</h1>
                 <h1>Schaarschmidt</h1>
-                <p className={styles.info}>Welcome to my Portfolio. I am a Junior Software Developer and
-                    currently
-                    writing my Bachelors Thesis. Let’s dive in!</p>
+                <p className={styles.info}>{t('info')}</p>
                 <span className={styles.links}>
                     <AiOutlineGithub className={styles.icon} onClick={() => window.open("https://github.com/sonkeks")}
                                  size={50}/>

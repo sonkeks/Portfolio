@@ -12,21 +12,24 @@ import {
 import {useEffect} from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import {useTranslation} from "react-i18next";
 
 const Skills = () => {
     useEffect(() => {
         AOS.init();
     }, []);
 
+    const { t } = useTranslation("skills");
+
     return (
         <div className={styles.container} id="skills">
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <h1>Skills</h1>
-                <h2>Development & More</h2>
+                <h1>{t('skills')}</h1>
+                <h2>{t('subtitle')}</h2>
             </div>
             <div className={styles.box}>
                 <div data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-                    <h3>Languages</h3>
+                    <h3>{t('languages')}</h3>
                     <ul>
                         <li>Java</li>
                         <li>JavaScript</li>
@@ -50,7 +53,7 @@ const Skills = () => {
                     </ul>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-                    <h3>Tools</h3>
+                    <h3>{t('tools')}</h3>
                     <ul>
                         <li>Git</li>
                         <li>Docker</li>
@@ -59,10 +62,10 @@ const Skills = () => {
                     </ul>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-                    <h3>Other</h3>
+                    <h3>{t('other')}</h3>
                     <ul>
-                        <li>Photography</li>
-                        <li>Making Music</li>
+                        <li>{t('photography')}</li>
+                        <li>{t('music')}</li>
                     </ul>
                 </div>
             </div>

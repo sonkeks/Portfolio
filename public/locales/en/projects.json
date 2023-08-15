@@ -1,0 +1,21 @@
+{
+  "projects": "Projects",
+  "subtitle": "What I have been creating",
+  "current": "Current Projects",
+  "wanna": "Wanna Work on a Project With me?",
+  "contact": "Contact Me",
+  "blubbleLabel": "Book Reading Club App",
+  "blubbleTitle": "Blubble",
+  "blubbleDescription": "A native Android & iOS app for founding, finding and organizing book clubs and their discussions. Communicate meeting dates with all club members, share notes and interests by commenting or uploading photos and guide your discussions with synchronous timers.",
+  "blubbleInfo": "This was the semesters second best university group project in my study program created in collaboration with Diva-e.",
+  "creapeLabel": "DIY Social Network",
+  "creapeTitle": "Creape",
+  "creapeDescription": "A web app for posting and sharing DIYs as well as getting instructions on how to recreate posted projects. Save your favorite DIYs and follow or message other users if you want to get to know more about their DIY ideas.",
+  "creapeInfo": "A project alongside a course at university.",
+  "hotelTitle": "Hotel Booking Page",
+  "hotelDescription": "Web application including a booking service for a Hotel in northern Germany",
+  "guitarTitle": "Guitar Chord Finder",
+  "guitarDescription": "Swift Notes App with chord finding algorithm and chord pattern display for guitars",
+  "magazineTitle": "Magazine Website",
+  "magazineDescription": "A Magazine Landing Page with 3D Elements"
+}

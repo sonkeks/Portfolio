@@ -1,0 +1,21 @@
+{
+  "experience": "Experience",
+  "subtitle": "Work and Courses",
+  "where": "Where I have been",
+  "courses": "Important University Courses",
+  "positionBachelor": "International Media & Computing Bachelor",
+  "titleBachelor": "HTW Berlin",
+  "dateBachelor": "October 2020 - April 2024",
+  "info1Bachelor": "International Study Program of Computer Science, Business, Media and Design in German and English",
+  "info2Bachelor": "Included a 4 months Internship and a Project Semester with concluding pitch-presentation",
+  "info3Bachelor": "Desired Bachelor-Thesis Topic: Development of a Search Engine with Bias mitigation concerning Gender in the German Language",
+  "positionTS": "Full Stack Development Intern",
+  "titleTS": "TroedelSpende",
+  "dateTS": "April 2022 - August 2022",
+  "info1TS": "Working in a Java Spring backend and a React TypeScript based frontend using the Windy CSS framework",
+  "info2TS": "Operating in an Agile Sprint based environment",
+  "info3TS": "Advertising the product to intererested parties on Start-up and non-profit organization events",
+  "positionMaster": "Masters Program",
+  "titleMaster": "Some University",
+  "dateMaster": "Soon"
+}

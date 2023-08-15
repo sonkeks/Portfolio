@@ -1,0 +1,14 @@
+{
+  "contact": "Contact",
+  "subtitle": "Let's get in Touch",
+  "name": "Name",
+  "surname": "Surname",
+  "email": "Email Address",
+  "subject": "Subject",
+  "message": "Message",
+  "clear": "Clear",
+  "send": "Send",
+  "fieldError": "Please add your {{fieldName}}",
+  "success": "Email was successfully sent",
+  "error": "Sorry, something went wrong. Please try again"
+}
