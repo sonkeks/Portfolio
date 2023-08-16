@@ -20,8 +20,6 @@ const SideMenu = forwardRef<SideMenuHandle, SideMenuProps>(({handleToggle, toggl
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const imprintModalRef = useRef<ModalHandle>(null);
 
-    console.log("Toggle State in Side Menu: " + toggleState);
-
     useImperativeHandle(ref, () => ({
         open() {
             setIsOpen(true);

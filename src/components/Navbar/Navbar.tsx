@@ -14,8 +14,6 @@ const Navbar = () => {
 
     const { t, i18n } = useTranslation("navbar");
 
-    console.log("Toggle Global State: " + toggleIsActive);
-
     const handleToggle = (state: boolean) => {
         toggle(state);
     }
