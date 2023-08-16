@@ -26,10 +26,13 @@
 
 .logo {
     width: 22px;
+    transition: color .1s;
 }
 
 .logo:hover {
     cursor: pointer;
+    color: var(--primary);
+    transition: color .1s;
 }
 
 .navItemsLeft {
@@ -91,12 +94,23 @@
 
 .burgerIcon {
     display: none;
+    transition: color .1s;
 }
 
-@media screen and (max-width: 800px) {
+.burgerIcon:hover {
+    cursor: pointer;
+    color: var(--primary-light);
+    transition: color .1s;
+}
+
+@media screen and (max-width: 860px) {
     .navBar {
         padding-top: 8px;
         padding-bottom: 50px;
+    }
+
+    .toggleContainer {
+        display: none;
     }
 
     .navItemsRight {

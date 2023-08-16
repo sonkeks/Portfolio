@@ -1,18 +1,20 @@
 import styles from "./Navbar.module.css";
 import {SlMenu} from "react-icons/sl";
-import {scrollPageTo} from "../helpers/scrollHelpers";
+import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {useRef, useState} from "react";
 import SideMenu, {SideMenuHandle} from "./SideMenu/SideMenu";
-import ImprintModal, {ModalHandle} from "./ImprintModal/ImprintModal";
+import ImprintModal, {ModalHandle} from "../ImprintModal/ImprintModal";
 import DarkModeToggle from "./DarkModeToggle";
 import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const sideMenuRef = useRef<SideMenuHandle>(null);
     const imprintModalRef = useRef<ModalHandle>(null);
-    const [toggleIsActive, toggle] = useState<boolean>();
+    const [toggleIsActive, toggle] = useState<boolean>(false);
 
     const { t, i18n } = useTranslation("navbar");
+
+    console.log("Toggle Global State: " + toggleIsActive);
 
     const handleToggle = (state: boolean) => {
         toggle(state);
@@ -29,7 +31,7 @@ const Navbar = () => {
                         <div className={styles.toggleContainer}>
                             {toggleIsActive && <span className={styles.toggleLabel}>{t('dark')}</span>}
                             {!toggleIsActive && <span className={styles.toggleLabel}>{t('light')}</span>}
-                            <DarkModeToggle toggled={false} onClick={handleToggle}/>
+                            <DarkModeToggle toggled={toggleIsActive} onClick={handleToggle}/>
                         </div>
                         <div className={styles.languageSelect}>
                             <button onClick={() => i18n.changeLanguage("de")} className={(i18n.resolvedLanguage === "de") ? styles.active : ""}>DE</button>
@@ -49,7 +51,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <SideMenu ref={sideMenuRef}/>
+            <SideMenu handleToggle={handleToggle} toggleState={toggleIsActive} ref={sideMenuRef}/>
             <ImprintModal ref={imprintModalRef}/>
         </>
     )

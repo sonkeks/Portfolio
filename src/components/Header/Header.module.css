@@ -1,6 +1,6 @@
 .header {
-    --dynamic-height: 65dvh;
-    height: var(--dynamic-height, 65vh);
+    --dynamic-height: 63dvh;
+    height: var(--dynamic-height, 63vh);
     display: flex;
     gap: 45px;
     justify-content: center;

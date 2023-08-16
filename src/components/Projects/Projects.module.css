@@ -32,6 +32,7 @@
 
 .projectHeader {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -135,6 +136,7 @@ a:hover {
     position: relative;
     bottom: 0;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .footer {
@@ -216,7 +218,7 @@ a:hover {
     }
 
     .headerLinks {
-        display: inline;
+        display: flex;
     }
 
     .projectCardGrid {

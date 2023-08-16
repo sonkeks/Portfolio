@@ -1,25 +1,18 @@
 import styles from "./WorkItem.module.css";
 import {FiChevronDown, FiChevronUp} from "react-icons/fi";
-import {SyntheticEvent, useEffect, useState} from "react";
+import {SyntheticEvent, useState} from "react";
 
 interface WorkItemProps {
     position: string,
     title: string,
     link?: string,
     date: string,
-    infoList: string[],
-    index: number
+    infoList: string[]
 }
 
-const WorkItem = ({position, title, link, date, infoList, index}: WorkItemProps) => {
+const WorkItem = ({position, title, link, date, infoList}: WorkItemProps) => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    useEffect(() => {
-        if (index === 0) {
-            setIsOpen(true);
-        }
-    }, [index])
 
     const toggleItem = (e: SyntheticEvent) => {
         setIsOpen(!isOpen);

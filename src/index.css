@@ -14,6 +14,7 @@ body {
   --shadow: #67768433;
   --image-grayscale: 0;
   --image-opacity: 100%;
+  --backdrop: rgba(40, 40, 40, 0.3);
   font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,9 +56,10 @@ body.dark {
   --tertiary-light: rgba(45, 45, 45, 0.66);
   --tertiary-dark: #dcdcdc;
   --selected: #6AA2E32D;
-  --shadow: rgba(17, 20, 23, 0.2);
+  --shadow: rgba(17, 20, 23, 0.3);
   --image-grayscale: 10%;
   --image-opacity: 90%;
+  --backdrop: rgba(19, 19, 19, 0.5);
 }
 
 @media screen and (max-width: 600px) {
@@ -83,5 +85,6 @@ body.dark {
     --shadow: rgba(17, 20, 23, 0.2);
     --image-grayscale: 10%;
     --image-opacity: 90%;
+    --backdrop: rgba(19, 19, 19, 0.5);
   }
 }

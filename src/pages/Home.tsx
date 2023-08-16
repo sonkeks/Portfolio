@@ -1,11 +1,11 @@
 import styles from "./Home.module.css";
-import Navbar from "../newComponents/Navbar";
-import Header from "../newComponents/Header";
-import Skills from "../newComponents/Skills";
-import Projects from "../newComponents/Projects";
-import Experience from "../newComponents/Experience";
-import Contact from "../newComponents/Contact";
-import Waves from "../newComponents/Waves";
+import Navbar from "../components/Navbar/Navbar";
+import Header from "../components/Header/Header";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Experience from "../components/Experience/Experience";
+import Contact from "../components/Contact/Contact";
+import Waves from "../components/Waves";
 
 const Home = () => {
     return (

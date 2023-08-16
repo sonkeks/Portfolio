@@ -13,14 +13,14 @@ const Experience = () => {
         {
             position: t("positionBachelor"),
             title: t("titleBachelor"),
-            link: "/",
+            link: "https://imi-bachelor.htw-berlin.de/",
             date: t("dateBachelor"),
             infoList: [t("info1Bachelor"), t("info2Bachelor"), t("info3Bachelor")]
         },
         {
             position: t("positionTS"),
             title: t("titleTS"),
-            link: "/",
+            link: "https://troedelspende.de/",
             date: t("dateTS"),
             infoList: [t("info1TS"), t("info2TS"), t("info3TS")]
         },
@@ -55,7 +55,6 @@ const Experience = () => {
                                 link={workPlace.link}
                                 date={workPlace.date}
                                 infoList={workPlace.infoList}
-                                index={index}
                             />
                         )
                     })}

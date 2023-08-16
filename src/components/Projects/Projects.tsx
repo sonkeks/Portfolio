@@ -1,9 +1,9 @@
 import styles from "./Projects.module.css";
-import Blubble from "../resources/BlubbleMockUp.png";
-import Creape from "../resources/Creape.png";
+import Blubble from "../../resources/BlubbleMockUp.png";
+import Creape from "../../resources/Creape.png";
 import Project from "./Project";
 import ProjectCard from "./ProjectCard";
-import {scrollPageTo} from "../helpers/scrollHelpers";
+import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
 import {useEffect} from "react";
 import AOS from "aos";
@@ -26,7 +26,7 @@ const Projects = () => {
             technologies: ["React", "Ionic", "Capacitor", "Firebase", "Socket.io", "Docker"],
             image: Blubble,
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
-            link: ""
+            link: "https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"
         },
         {
             label: t("creapeLabel"),
@@ -98,7 +98,7 @@ const Projects = () => {
                 })}
             </div>
             <div>
-                <h2>{t("current")}</h2>
+                <h2>{t("other")}</h2>
                 <div className={styles.projectCardGrid}>
                     {projects.map((project, index) => {
                         return (
