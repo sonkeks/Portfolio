@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-import Blubble from "../../resources/BlubbleMockUp.png";
+import Blubble from "../../resources/BlubbleMockUp2.png";
 import Creape from "../../resources/Creape.png";
 import Project from "./Project";
 import ProjectCard from "./ProjectCard";
