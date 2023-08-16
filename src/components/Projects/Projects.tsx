@@ -17,6 +17,14 @@ const Projects = () => {
 
     const { t } = useTranslation("projects");
 
+    const getImagePath = (image: string) => {
+        if (process.env.NODE_ENV === "production") {
+            return `/soenke/build/${image}`;
+        } else {
+            return image;
+        }
+    }
+
     const featuredProjects = [
         {
             label: t("blubbleLabel"),
@@ -24,7 +32,7 @@ const Projects = () => {
             description: t("blubbleDescription"),
             info: t("blubbleInfo"),
             technologies: ["React", "Ionic", "Capacitor", "Firebase", "Socket.io", "Docker"],
-            image: Blubble,
+            image: getImagePath(Blubble),
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
             link: "https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"
         },
@@ -34,7 +42,7 @@ const Projects = () => {
             description: t("creapeDescription"),
             info: t("creapeInfo"),
             technologies: ["JavaScript", "Express.js", "MongoDB", "Socket.io"],
-            image: Creape,
+            image: getImagePath(Creape),
             git: "https://github.com/LeanderAK/WTAT1_Group_B",
             link: ""
         },
