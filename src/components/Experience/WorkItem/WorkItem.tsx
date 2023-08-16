@@ -23,7 +23,7 @@ const WorkItem = ({position, title, link, date, infoList}: WorkItemProps) => {
         <details open={isOpen} className={isOpen ? styles.workOpen : ""}>
             <summary onClick={(e) => toggleItem(e)} className={styles.workItem}>
                 <div>{infoList.length > 0 && (isOpen ? <FiChevronUp className={styles.arrow}/> : <FiChevronDown className={styles.arrow}/>)}</div>
-                <span className={styles.workTitle}>{position} <a onClick={event => event.stopPropagation()} href={link}>@{title}</a></span>
+                <span className={styles.workTitle}>{position} <a target="_blank" rel="noopener noreferrer" onClick={event => event.stopPropagation()} href={link}>@{title}</a></span>
                 <div className={styles.workDate}>{date}</div>
             </summary>
             {infoList.length > 0 &&

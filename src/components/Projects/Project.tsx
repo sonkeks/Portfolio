@@ -22,8 +22,8 @@ const Project = ({label, title, description, info, technologies, image, git, lin
                         <h3 className={styles.projectName}>{title}</h3>
                     </div>
                     <div className={styles.links  + " " + styles.headerLinks}>
-                        {git && git.length > 0 && <a href={git}><FiGithub size={35}/></a>}
-                        {link && link.length > 0 && <a href={link}><FiExternalLink size={35}/></a>}
+                        {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}><FiGithub size={35}/></a>}
+                        {link && link.length > 0 && <a target="_blank" rel="noopener noreferrer" href={link}><FiExternalLink size={35}/></a>}
                     </div>
                 </div>
                 <div className={styles.projectInfo}>
@@ -36,8 +36,8 @@ const Project = ({label, title, description, info, technologies, image, git, lin
                     })}
                 </div>
                 <div className={styles.links + " " + styles.footerLinks}>
-                    {git && git.length > 0 && <a href={git}><FiGithub size={35}/></a>}
-                    {link && link.length > 0 && <a href={link}><FiExternalLink size={35}/></a>}
+                    {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}><FiGithub size={35}/></a>}
+                    {link && link.length > 0 && <a target="_blank" rel="noopener noreferrer" href={link}><FiExternalLink size={35}/></a>}
                 </div>
             </section>
             <section>

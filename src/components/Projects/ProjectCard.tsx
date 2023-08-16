@@ -28,8 +28,8 @@ const ProjectCard = ({title, description, technologies, git, link, icon, index}:
                         <div className={styles.cardHeader}>
                             {icon}
                             <span className={styles.links}>
-                            {git && <a href={git}><FiGithub size={30}/></a>}
-                                {link && <a href={link}><FiExternalLink size={30}/></a>}
+                            {git && <a target="_blank" rel="noopener noreferrer" href={git}><FiGithub size={30}/></a>}
+                                {link && <a target="_blank" rel="noopener noreferrer" href={link}><FiExternalLink size={30}/></a>}
                         </span>
                         </div>
                         <h3 className={styles.projectName}>{title}</h3>
