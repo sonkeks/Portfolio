@@ -47,7 +47,7 @@ const Contact = () => {
             message: message,
         }
         setIsSending(true);
-        emailjs.send("service_48dpmw2", "template_i2ywh58", params, "VqwU8RRV6d3zX77CS")
+        emailjs.send("service_48dpmw2", "template_i2ywh58", params, "UqwU8RRV6d3zX77CS")
             .then(() => {
                 setName("");
                 setSurname("");
