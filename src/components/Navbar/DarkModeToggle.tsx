@@ -17,6 +17,12 @@ const DarkModeToggle = ({toggled, onClick}: DarkModeToggleProps) => {
         }
     }, [isActive]);
 
+    useEffect(() => {
+        if(document.body.classList.contains("dark")){
+            callback()
+        }
+    },[])
+
     const callback = () => {
         toggle(!isActive);
         onClick(!isActive);

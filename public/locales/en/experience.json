@@ -15,7 +15,16 @@
   "info1TS": "Working in a Java Spring backend and a React TypeScript based frontend using the Windy CSS framework",
   "info2TS": "Operating in an Agile Sprint based environment",
   "info3TS": "Advertising the product to intererested parties on Start-up and non-profit organization events",
-  "positionMaster": "Masters Program",
-  "titleMaster": "Some University",
-  "dateMaster": "Soon"
+  "positionPA": "Working Student",
+  "titlePA": "proALPHA",
+  "datePA": "October 2023 - Today",
+  "info1PA": "will be added soon",
+  "info2PA": "will be added",
+  "info3PA": "will be added",
+  "positionMaster": "Media & Computing Master",
+  "titleMaster": "BHT",
+  "dateMaster": "April 2024 - Today",
+  "info1Master": "will be added",
+  "info2Master": "will be added",
+  "info3Master": "will be added"
 }

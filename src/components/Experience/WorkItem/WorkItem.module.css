@@ -23,6 +23,10 @@ summary {
     cursor: pointer;
 }
 
+.itemClosed:hover {
+    background-color: var(--tertiary-dark);
+}
+
 .workItem a {
     white-space: nowrap;
     color: var(--primary);

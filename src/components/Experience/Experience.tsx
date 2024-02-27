@@ -25,11 +25,18 @@ const Experience = () => {
             infoList: [t("info1TS"), t("info2TS"), t("info3TS")]
         },
         {
+            position: t("positionPA"),
+            title: t("titlePA"),
+            link: "https://www.proalpha.com",
+            date: t("datePA"),
+            infoList: [t("info1PA")/*, t("info2PA"), t("info3PA")*/]
+        },
+        {
             position: t("positionMaster"),
             title: t("titleMaster"),
-            link: "/",
+            link: "https://www.bht-berlin.de/",
             date: t("dateMaster"),
-            infoList: [],
+            infoList: [t("info1Master"),/* t("info2Master"), t("info3Master") */],
         }
     ]
 
