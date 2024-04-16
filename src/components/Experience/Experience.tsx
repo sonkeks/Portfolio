@@ -15,7 +15,7 @@ const Experience = () => {
             title: t("titleBachelor"),
             link: "https://imi-bachelor.htw-berlin.de/",
             date: t("dateBachelor"),
-            infoList: [t("info1Bachelor"), t("info2Bachelor"), t("info3Bachelor")]
+            infoList: [t("info1Bachelor"), t("info2Bachelor"), t("info3Bachelor"), t("info4Bachelor")]
         },
         {
             position: t("positionTS"),
@@ -34,7 +34,7 @@ const Experience = () => {
         {
             position: t("positionMaster"),
             title: t("titleMaster"),
-            link: "https://www.bht-berlin.de/",
+            link: "https://www.bht-berlin.de/m-mi",
             date: t("dateMaster"),
             infoList: [t("info1Master"),/* t("info2Master"), t("info3Master") */],
         }

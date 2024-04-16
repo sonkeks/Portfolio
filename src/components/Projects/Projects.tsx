@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import Blubble from "../../resources/BlubbleMockUp2.png";
 import Creape from "../../resources/Creape.png";
+import Diver from "../../resources/Diver.png";
 import Project from "./Project";
 import ProjectCard from "./ProjectCard";
 import {scrollPageTo} from "../../helpers/scrollHelpers";
@@ -26,6 +27,16 @@ const Projects = () => {
     }
 
     const featuredProjects = [
+        {
+            label: t("diverLabel"),
+            title: t("diverTitle"),
+            description: t("diverDescription"),
+            info: t("diverInfo"),
+            technologies: ["Python", "SpaCy", "Custom Search JSON API", "React"],
+            image: getImagePath(Diver),
+            git: "https://github.com/sonkeks/diver-bachelor-thesis?tab=readme-ov-file",
+            link: ""
+        },
         {
             label: t("blubbleLabel"),
             title: t("blubbleTitle"),
@@ -106,6 +117,7 @@ const Projects = () => {
                 })}
             </div>
             <div>
+                {/*
                 <h2>{t("other")}</h2>
                 <div className={styles.projectCardGrid}>
                     {projects.map((project, index) => {
@@ -116,6 +128,7 @@ const Projects = () => {
                         )
                     })}
                 </div>
+                */}
                 <div className={styles.footer}>
                     <div className={styles.phrase}>{t("wanna")}</div>
                     <button className={styles.contactButton} onClick={() => scrollPageTo("contact")}>{t("contact")}</button>
