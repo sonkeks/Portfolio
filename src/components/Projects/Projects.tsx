@@ -34,6 +34,7 @@ const Projects = () => {
             info: t("diverInfo"),
             technologies: ["Python", "SpaCy", "Custom Search JSON API", "React"],
             image: getImagePath(Diver),
+            shadow: true,
             git: "https://github.com/sonkeks/diver-bachelor-thesis?tab=readme-ov-file",
             link: ""
         },
@@ -44,6 +45,7 @@ const Projects = () => {
             info: t("blubbleInfo"),
             technologies: ["React", "Ionic", "Capacitor", "Firebase", "Socket.io", "Docker"],
             image: getImagePath(Blubble),
+            shadow: false,
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
             link: "https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"
         },
@@ -54,6 +56,7 @@ const Projects = () => {
             info: t("creapeInfo"),
             technologies: ["JavaScript", "Express.js", "MongoDB", "Socket.io"],
             image: getImagePath(Creape),
+            shadow: true,
             git: "https://github.com/LeanderAK/WTAT1_Group_B",
             link: ""
         },
@@ -111,6 +114,7 @@ const Projects = () => {
                         info={project.info}
                         technologies={project.technologies}
                         image={project.image}
+                        shadow={project.shadow}
                         git={project.git}
                         link={project.link}
                     />

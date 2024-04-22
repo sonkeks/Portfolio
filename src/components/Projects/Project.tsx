@@ -8,11 +8,12 @@ interface ProjectProps {
     info: string,
     technologies: string[],
     image: string,
+    shadow: boolean,
     git?: string,
     link?: string,
 }
 
-const Project = ({label, title, description, info, technologies, image, git, link}: ProjectProps) => {
+const Project = ({label, title, description, info, technologies, image, shadow, git, link}: ProjectProps) => {
     return (
         <>
             <section>
@@ -41,7 +42,7 @@ const Project = ({label, title, description, info, technologies, image, git, lin
                 </div>
             </section>
             <section>
-                <img className={styles.projectImage} src={image} alt={"Project called " + title}/>
+                <img className={`${styles.projectImage} ${shadow ? styles.projectImageShadow : ""}`} src={image} alt={"Project called " + title}/>
             </section>
         </>
     )

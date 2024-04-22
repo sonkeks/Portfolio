@@ -83,6 +83,10 @@ a:hover {
     width: 100%;
 }
 
+.projectImageShadow {
+    box-shadow: 0 4px 10px #9cafbb;
+}
+
 .projectCardGrid {
     margin-top: 30px;
     margin-bottom: 40px;

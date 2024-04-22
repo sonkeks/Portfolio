@@ -44,9 +44,9 @@ const Skills = () => {
                     <ul>
                         <li>React</li>
                         <li>Ionic</li>
-                        <li>Capacitor</li>
+                        <li>Next.js</li>
                         <li>Express.js</li>
-                        <li>Node.js</li>
+                        <li>FastAPI</li>
                         <li>Spring</li>
                         <li>MongoDB</li>
                         <li>Firebase</li>
@@ -56,16 +56,12 @@ const Skills = () => {
                     <h3>{t('tools')}</h3>
                     <ul>
                         <li>Git</li>
+                        <li>Node.js</li>
+                        <li>Capacitor</li>
+                        <li>SpaCy</li>
                         <li>Docker</li>
                         <li>Figma</li>
                         <li>Maya</li>
-                    </ul>
-                </div>
-                <div data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-                    <h3>{t('other')}</h3>
-                    <ul>
-                        <li>{t('photography')}</li>
-                        <li>{t('music')}</li>
                     </ul>
                 </div>
             </div>
