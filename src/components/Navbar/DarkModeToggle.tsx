@@ -17,16 +17,16 @@ const DarkModeToggle = ({toggled, onClick}: DarkModeToggleProps) => {
         }
     }, [isActive]);
 
+    const callback = () => {
+        toggle(!isActive);
+        onClick(!isActive);
+    }
+
     useEffect(() => {
         if(document.body.classList.contains("dark")){
             callback()
         }
     },[])
-
-    const callback = () => {
-        toggle(!isActive);
-        onClick(!isActive);
-    }
 
     return (
         <label className={styles.label}>

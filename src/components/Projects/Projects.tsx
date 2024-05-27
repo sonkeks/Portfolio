@@ -3,7 +3,6 @@ import Blubble from "../../resources/BlubbleMockUp2.png";
 import Creape from "../../resources/Creape.png";
 import Diver from "../../resources/Diver.png";
 import Project from "./Project";
-import ProjectCard from "./ProjectCard";
 import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
 import {useEffect} from "react";
