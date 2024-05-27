@@ -29,7 +29,7 @@ const Experience = () => {
             title: t("titlePA"),
             link: "https://www.proalpha.com",
             date: t("datePA"),
-            infoList: [t("info1PA")/*, t("info2PA"), t("info3PA")*/]
+            infoList: [t("info1PA"), t("info2PA")]
         },
         {
             position: t("positionMaster"),
