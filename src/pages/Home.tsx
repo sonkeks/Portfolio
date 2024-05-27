@@ -6,10 +6,23 @@ import Projects from "../components/Projects/Projects";
 import Experience from "../components/Experience/Experience";
 import Contact from "../components/Contact/Contact";
 import Waves from "../components/Waves";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Sönke Schaarschmidt</title>
+                <meta name="description" content="Developer Portfolio of Sönke Schaarschmidt"/>
+                <meta name="keywords" content="Developer, Portfolio, Frontend, UI, UX"/>
+                <meta name="author" content="Sönke Schaarschmidt"/>
+                <meta property="og:title" content="Sönke Schaarschmidt"/>
+                <meta property="og:description" content="Developer Portfolio of Sönke Schaarschmidt"/>
+                <meta property="og:url" content="https://www.soenke-schaarschmidt.de"/>
+                <meta name="twitter:title" content="Sönke Schaarschmidt"/>
+                <meta name="twitter:description" content="Developer Portfolio of Sönke Schaarschmidt"/>
+            </Helmet>
             <div className={styles.margin}>
                 <Navbar/>
             </div>
@@ -21,7 +34,7 @@ const Home = () => {
             <Waves/>
             <div className={styles.margin}>
                 <div className={styles.homeBody}>
-                    <Skills />
+                    <Skills/>
                     <Projects data-aos="fade-up"/>
                     <Experience data-aos="fade-up"/>
                     <Contact data-aos="fade-up"/>

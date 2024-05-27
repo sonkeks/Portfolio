@@ -37,4 +37,16 @@ ul {
     .backgroundBox {
         font-size: 130px;
     }
+
+    .box {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        display: flex;
+        line-height: 0.4;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 }
