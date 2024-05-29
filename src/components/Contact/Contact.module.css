@@ -1,6 +1,6 @@
 .container {
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .form {
@@ -51,6 +51,10 @@
     transition: transform .3s;
 }
 
+.label:hover {
+    cursor: text;
+}
+
 input {
     display: block;
     margin: 0;
@@ -85,7 +89,7 @@ textarea {
     outline: none;
     padding: 13px 10px 13px 10px;
     width: calc(100% - 24px);
-    height: 180px;
+    height: 150px;
     background-color: var(--color-background);
     border: var(--secondary) 2px solid;
     color: var(--color-text);
@@ -103,7 +107,7 @@ textarea::placeholder {
 }
 
 textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLabel {
-    transform: translateY(-15.6em) scale(.85);
+    transform: translateY(-13.33em) scale(.85);
 }
 
 .textareaLabel {
@@ -118,9 +122,13 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
     background-color: var(--color-background);
     width: fit-content;
     font-weight: normal;
-    transform: translateY(-14.2em);
+    transform: translateY(-12.0em);
     transform-origin: 0 0;
     transition: transform .3s;
+}
+
+.textareaLabel:hover {
+    cursor: text;
 }
 
 .errorMessage {
@@ -191,6 +199,8 @@ textarea:focus + .textareaLabel, textarea:not(:placeholder-shown) + .textareaLab
     transition: all .1s;
     background-color: var(--primary-light);
     border: var(--primary-light) 2px solid;
+    color: var(--color-background);
+    cursor: default;
 }
 
 .loader {
