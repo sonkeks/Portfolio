@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-import {FiExternalLink, FiGithub} from "react-icons/fi";
+import {FiExternalLink, FiGithub, FiGitlab} from "react-icons/fi";
 
 interface ProjectProps {
     label: string,
@@ -23,7 +23,7 @@ const Project = ({label, title, description, info, technologies, image, shadow, 
                         <h3 className={styles.projectName}>{title}</h3>
                     </div>
                     <div className={styles.links  + " " + styles.headerLinks}>
-                        {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}><FiGithub size={35}/></a>}
+                        {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}>{git.includes("github") ? <FiGithub size={35}/> : <FiGitlab size={35}/>}</a>}
                         {link && link.length > 0 && <a target="_blank" rel="noopener noreferrer" href={link}><FiExternalLink size={35}/></a>}
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Project = ({label, title, description, info, technologies, image, shadow, 
                     })}
                 </div>
                 <div className={styles.links + " " + styles.footerLinks}>
-                    {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}><FiGithub size={35}/></a>}
+                    {git && git.length > 0 && <a target="_blank" rel="noopener noreferrer" href={git}>{git.includes("github") ? <FiGithub size={35}/> : <FiGitlab size={35}/>}</a>}
                     {link && link.length > 0 && <a target="_blank" rel="noopener noreferrer" href={link}><FiExternalLink size={35}/></a>}
                 </div>
             </section>

@@ -1,7 +1,8 @@
 import styles from "./Projects.module.css";
 import Blubble from "../../resources/BlubbleMockUp2.png";
-import Creape from "../../resources/Creape.png";
 import Diver from "../../resources/Diver.png";
+import Barspot from "../../resources/Barspot.png";
+import Savorly from "../../resources/Savorly.png"
 import Project from "./Project";
 import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
@@ -27,6 +28,28 @@ const Projects = () => {
 
     const featuredProjects = [
         {
+            label: t("savorlyLabel"),
+            title: t("savorlyTitle"),
+            description: t("savorlyDescription"),
+            info: t("savorlyInfo"),
+            technologies: ["React Native", "Expo", "Spring", "PostgreSQL", "TypeScript"],
+            image: getImagePath(Savorly),
+            shadow: false,
+            git: "https://gitlab.bht-berlin.de/sosc7662/ewd-app",
+            link: ""
+        },
+        {
+            label: t("barspotLabel"),
+            title: t("barspotTitle"),
+            description: t("barspotDescription"),
+            info: t("barspotInfo"),
+            technologies: ["React Native", "Expo", "Spring", "Foursquare API", "PostgreSQL"],
+            image: getImagePath(Barspot),
+            shadow: false,
+            git: "https://gitlab.bht-berlin.de/sosc7662/ebe-app",
+            link: ""
+        },
+        {
             label: t("diverLabel"),
             title: t("diverTitle"),
             description: t("diverDescription"),
@@ -47,17 +70,6 @@ const Projects = () => {
             shadow: false,
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
             link: "https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"
-        },
-        {
-            label: t("creapeLabel"),
-            title: t("creapeTitle"),
-            description: t("creapeDescription"),
-            info: t("creapeInfo"),
-            technologies: ["JavaScript", "Express.js", "MongoDB", "Socket.io"],
-            image: getImagePath(Creape),
-            shadow: true,
-            git: "https://github.com/LeanderAK/WTAT1_Group_B",
-            link: ""
         },
     ]
 
