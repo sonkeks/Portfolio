@@ -1,6 +1,5 @@
 import styles from "./Experience.module.css";
 import WorkItem from "./WorkItem/WorkItem";
-import CourseAccordion from "./CourseAccordion/CourseAccordion";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
@@ -53,10 +52,11 @@ const Experience = () => {
             <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                 <h3>{t("where")}</h3>
                 <div className={styles.workBox}>
-                    {workPlaces.map((workPlace, index) => {
+                    {workPlaces.reverse().map((workPlace, index) => {
                         return (
                             <WorkItem
                                 key={index}
+                                index={index}
                                 position={workPlace.position}
                                 title={workPlace.title}
                                 link={workPlace.link}

@@ -1,30 +1,21 @@
-.arrow {
-    font-size: 30px;
-}
-
 .workItem {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: auto 1fr 30%;
-    align-items: center;
-    font-weight: bold;
-    gap: 10px;
-}
-
-.workItem::-webkit-details-marker, .workItem::marker {
-    display: none;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding-bottom: 25px;
 }
 
 summary {
     list-style: none;
 }
 
-.workItem:hover {
-    cursor: pointer;
+.workItem h3 {
+    margin: 0;
 }
 
-.itemClosed:hover {
-    background-color: var(--tertiary-dark);
+.workItem h4 {
+    margin: 2px 0;
 }
 
 .workItem a {
@@ -45,28 +36,34 @@ summary {
     user-select: none;
     font-weight: normal;
     font-size: 12px;
-    text-align: right;
+}
+
+.timelineCircle {
+    margin: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-background);
+    border: var(--primary) solid 2px;
+    border-radius: 12px;
+    flex: none;
+}
+
+.timelineCircleRecent {
+    background-color: var(--primary);
 }
 
 .workContent {
-    padding-left: 50px;
     font-weight: normal;
-    padding-bottom: 15px;
 }
 
-.workContent ul {
-    margin: 0;
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.workContent li {
-    font-size: 14px;
-    padding: 5px 15px 5px 5px;
-}
-
-.workOpen {
-    background-color: var(--selected);
+.connector {
+    top: 10px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 13px;
+    background-color: var(--primary-shade);
+    z-index: -1;
 }
 
 @media screen and (max-width: 600px) {
