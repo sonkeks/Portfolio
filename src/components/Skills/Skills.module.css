@@ -8,16 +8,67 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 55px;
+    gap: 20px;
 }
 
-ul {
+.skillList {
+    list-style-type: none;
     line-height: 1.6;
-    padding-left: 15px;
+    padding-left: 0;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: bold;
+    border: var(--primary) 2px solid;
+    padding: 10px 15px 10px 15px;
+    transition: all .1s;
+}
+
+button:hover {
+    color: var(--color-background);
+    border: var(--primary) 2px solid;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.buttonFocussed {
+    color: var(--color-background);
+    border: var(--primary-shade) 2px solid;
+    background-color: var(--primary-shade);
+    cursor: pointer;
+    transition: all .1s;
 }
 
 .box li {
+    background-color: var(--tertiary);
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
     font-size: 16px;
+    transition: all .1s;
+}
+
+.highlighted {
+    background-color: var(--primary) !important;
+    color: var(--color-background);
+    transition: all .1s;
 }
 
 .backgroundBox {
@@ -31,22 +82,4 @@ ul {
     width: 100%;
     color: var(--tertiary-light);
     font-size: 170px;
-}
-
-@media screen and (max-width: 750px) {
-    .backgroundBox {
-        font-size: 130px;
-    }
-
-    .box {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    ul {
-        display: flex;
-        line-height: 0.4;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
 }
