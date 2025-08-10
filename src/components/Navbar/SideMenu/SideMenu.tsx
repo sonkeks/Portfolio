@@ -1,24 +1,21 @@
 import styles from "./SideMenu.module.css";
-import {forwardRef, useImperativeHandle, useRef, useState} from "react";
+import {forwardRef, useContext, useImperativeHandle, useRef, useState} from "react";
 import {AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
 import {scrollPageTo} from "../../../helpers/scrollHelpers";
 import {FiChevronRight} from "react-icons/fi";
 import ImprintModal, {ModalHandle} from "../../ImprintModal/ImprintModal";
 import DarkModeToggle from "../DarkModeToggle";
 import {useTranslation} from "react-i18next";
+import {DarkModeContext} from "../DarkModeContext";
 
 export type SideMenuHandle = {
     open: () => void;
 }
 
-interface SideMenuProps {
-    handleToggle: (value: boolean) => void,
-    toggleState: boolean,
-}
-
-const SideMenu = forwardRef<SideMenuHandle, SideMenuProps>(({handleToggle, toggleState}: SideMenuProps, ref) => {
+const SideMenu = forwardRef<SideMenuHandle>((_, ref) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const imprintModalRef = useRef<ModalHandle>(null);
+    const {state} = useContext(DarkModeContext);
 
     useImperativeHandle(ref, () => ({
         open() {
@@ -41,9 +38,9 @@ const SideMenu = forwardRef<SideMenuHandle, SideMenuProps>(({handleToggle, toggl
                 <div className={styles.header}>
                     <FiChevronRight size={40} onClick={() => setIsOpen(false)} className={styles.closeButton}/>
                     <div className={styles.toggleContainer}>
-                        {toggleState && <span className={styles.toggleLabel}>{t('dark')}</span>}
-                        {!toggleState && <span className={styles.toggleLabel}>{t('light')}</span>}
-                        <DarkModeToggle toggled={toggleState} onClick={handleToggle}/>
+                        {state.isDark && <span className={styles.toggleLabel}>{t('dark')}</span>}
+                        {!state.isDark && <span className={styles.toggleLabel}>{t('light')}</span>}
+                        <DarkModeToggle />
                     </div>
                 </div>
                 <div className={styles.items}>

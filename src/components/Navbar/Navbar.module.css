@@ -57,8 +57,8 @@
     gap: 5px;
 }
 
-.active {
-    font-weight: bold;
+.languageSelect button.active {
+    font-weight: bold
 }
 
 .languageSelect button {
@@ -66,6 +66,7 @@
     margin: 0;
     border: 0;
     font-size: 16px;
+    font-weight: normal;
     background-color: transparent;
     color: var(--color-text);
 }
@@ -73,6 +74,8 @@
 .languageSelect button:hover {
     cursor: pointer;
     color: var(--primary-light);
+    background-color: transparent;
+    border: none;
 }
 
 .navItemsRight {

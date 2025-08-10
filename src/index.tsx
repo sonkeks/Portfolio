@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./i18n";
+import {DarkModeProvider} from "./components/Navbar/DarkModeContext";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Suspense fallback="is loading...">
+          <DarkModeProvider>
             <App/>
+          </DarkModeProvider>
         </Suspense>
     </React.StrictMode>
 );

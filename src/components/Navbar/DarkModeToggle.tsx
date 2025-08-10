@@ -1,36 +1,13 @@
 import styles from "./DarkModeToggle.module.css";
-import {useEffect, useState} from "react";
+import {useContext} from "react";
+import {DarkModeContext} from "./DarkModeContext";
 
-interface DarkModeToggleProps {
-    toggled: boolean,
-    onClick: (value: boolean) => void
-}
-
-const DarkModeToggle = ({toggled, onClick}: DarkModeToggleProps) => {
-    const [isActive, toggle] = useState<boolean>(toggled);
-
-    useEffect(() => {
-        if (isActive) {
-            document.body.classList.add("dark");
-        } else {
-            document.body.classList.remove("dark");
-        }
-    }, [isActive]);
-
-    const callback = () => {
-        toggle(!isActive);
-        onClick(!isActive);
-    }
-
-    useEffect(() => {
-        if(document.body.classList.contains("dark")){
-            callback()
-        }
-    },[])
+const DarkModeToggle = () => {
+    const { state, dispatch } = useContext(DarkModeContext);
 
     return (
         <label className={styles.label}>
-            <input className={styles.input} type="checkbox" defaultChecked={isActive} onClick={callback} />
+            <input className={styles.input} type="checkbox" checked={state.isDark} onChange={() => dispatch({ type: 'TOGGLE'})} />
             <span className={styles.span} />
         </label>
     )
