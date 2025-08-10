@@ -67,10 +67,12 @@ const Experience = () => {
                     })}
                 </div>
             </div>
+            {/*
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                 <h3>{t("courses")}</h3>
                 <CourseAccordion/>
             </div>
+            */}
         </div>
     )
 }
