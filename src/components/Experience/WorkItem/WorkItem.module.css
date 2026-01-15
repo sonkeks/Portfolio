@@ -4,6 +4,7 @@
     gap: 15px;
     align-items: flex-start;
     padding-bottom: 25px;
+    max-width: 500px;
 }
 
 summary {
@@ -54,6 +55,62 @@ summary {
 
 .workContent {
     font-weight: normal;
+    width: 100%;
+}
+
+.toggleButton {
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--secondary-light);
+  transition: transform 0.2s ease;
+}
+
+.collapseIcon {
+  transition: transform 0.2s ease;
+}
+
+.collapseIcon.rotate {
+  transform: rotate(-180deg);
+}
+
+.toggleButton:hover {
+  background: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--secondary);
+}
+
+.workItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+}
+
+.workInfo {
+  list-style: disc;
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+
+  /* animation setup */
+  max-height: 500px; /* large enough for content */
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  opacity: 1;
+
+  li {
+    max-width: 480px;
+    margin: 15px 0;
+  }
+}
+
+.collapsed {
+  max-height: 0;
+  pointer-events: none;
 }
 
 .connector {

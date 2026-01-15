@@ -22,11 +22,11 @@ const LANGUAGES = [
     "Swift",
     "SQL",
     "CLI",
-    "YAML"
 ];
 
 const FRAMEWORKS = [
     "React",
+    "Angular",
     "Ionic",
     "Next.js",
     "Express.js",
@@ -38,16 +38,18 @@ const FRAMEWORKS = [
     "Firebase",
     "Expo",
     "Angular",
-    "React Testing Library"
+    "Shadcn UI",
+    "Chakra UI",
+    "Material UI",
 ];
 
 const TOOLS = [
     "Git",
+    "Scaleway",
     "Google Cloud",
     "Node.js",
     "Maven",
     "Capacitor",
-    "Foursquare",
     "SpaCy",
     "Docker",
     "Figma",
@@ -58,7 +60,8 @@ const CONCEPTS = [
     "JWT & Refresh Token",
     "REST",
     "State Management",
-    "ORM"
+    "ORM",
+    "TDD",
 ];
 
 const Skills = () => {

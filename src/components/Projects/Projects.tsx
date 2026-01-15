@@ -3,6 +3,7 @@ import Blubble from "../../resources/BlubbleMockUp2.png";
 import Diver from "../../resources/Diver.png";
 import Barspot from "../../resources/Barspot.png";
 import Savorly from "../../resources/Savorly.png"
+import HistoryMap from "../../resources/HistoryMap.png";
 import Project from "./Project";
 import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
@@ -28,6 +29,17 @@ const Projects = () => {
 
     const featuredProjects = [
         {
+            label: t("historyLabel"),
+            title: t("historyTitle"),
+            description: t("historyDescription"),
+            info: t("historyInfo"),
+            technologies: ["React", "Chakra UI", "TypeScript", "Wikidata", "SPARQL"],
+            image: getImagePath(HistoryMap),
+            shadow: true,
+            git: "https://github.com/sonkeks/M-MI_InteractiveHistoryMap",
+            link: "https://sonkeks.github.io/M-MI_InteractiveHistoryMap/#/collections"
+        },
+        {
             label: t("savorlyLabel"),
             title: t("savorlyTitle"),
             description: t("savorlyDescription"),
@@ -38,6 +50,7 @@ const Projects = () => {
             git: "https://gitlab.bht-berlin.de/sosc7662/ewd-app",
             link: ""
         },
+        /*
         {
             label: t("barspotLabel"),
             title: t("barspotTitle"),
@@ -49,6 +62,7 @@ const Projects = () => {
             git: "https://gitlab.bht-berlin.de/sosc7662/ebe-app",
             link: ""
         },
+         */
         {
             label: t("diverLabel"),
             title: t("diverTitle"),

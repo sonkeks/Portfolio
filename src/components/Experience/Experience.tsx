@@ -28,14 +28,14 @@ const Experience = () => {
             title: t("titlePA"),
             link: "https://www.proalpha.com",
             date: t("datePA"),
-            infoList: [t("info1PA"), t("info2PA")]
+            infoList: [t("info1PA"), t("info2PA"), t("info3PA")]
         },
         {
             position: t("positionMaster"),
             title: t("titleMaster"),
             link: "https://www.bht-berlin.de/m-mi",
             date: t("dateMaster"),
-            infoList: [t("info1Master"),/* t("info2Master"), t("info3Master") */],
+            infoList: [t("info1Master"), t("info2Master"), t("info3Master")],
         }
     ]
 
@@ -50,7 +50,6 @@ const Experience = () => {
                 <h2>{t("subtitle")}</h2>
             </div>
             <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-                <h3>{t("where")}</h3>
                 <div className={styles.workBox}>
                     {workPlaces.reverse().map((workPlace, index) => {
                         return (

@@ -1,24 +1,17 @@
-function scrollPageTo(target: string){
-    let headerOffset = 70;
-    let elementOffset = 0;
-    let element: HTMLElement | null = null;
-    switch (target) {
-        case "skills": element = document.getElementById("skills"); break;
-        case "projects": element = document.getElementById("projects"); break;
-        case "experience": element = document.getElementById("experience"); break;
-        case "contact": element = document.getElementById("contact");
-    }
+function scrollPageTo(target: string) {
+  const headerOffset = 70;
+  const element = document.getElementById(target);
 
-    if(element) {
-        elementOffset = element.getBoundingClientRect().top;
-        let offsetPosition = elementOffset + window.scrollY - headerOffset;
+  if (element) {
+    const offsetPosition = element.offsetTop - headerOffset;
 
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
-    }
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
 }
+
 
 export {
     scrollPageTo,
