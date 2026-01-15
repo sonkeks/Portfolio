@@ -6,19 +6,17 @@ interface DarkModeContextValue {
   dispatch: Dispatch<DarkModeAction>;
 }
 
-const initialState: DarkModeState = { isDark: false };
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const initialState: DarkModeState = { isDark: prefersDark };
 
 export const DarkModeContext = createContext<DarkModeContextValue>({state: initialState, dispatch: () => {}});
 
 export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
-  const [state, dispatch] = useReducer(darkModeReducer, { isDark: false });
+  const [state, dispatch] = useReducer(darkModeReducer, initialState);
   
   useEffect(() => {
-    if (state.isDark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
+    document.body.classList.toggle("dark", state.isDark);
   }, [state.isDark]);
   
   return (
