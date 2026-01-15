@@ -83,3 +83,20 @@ button:hover {
     color: var(--tertiary-light);
     font-size: 170px;
 }
+
+.imageContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.skillsImage {
+  max-width: 460px;
+}
+
+@media screen and (max-width: 500px) {
+  .skillsImage {
+    display: none;
+  }
+}
+

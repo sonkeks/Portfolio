@@ -4,6 +4,8 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
+import {getImagePath} from "../../helpers/getImagePath";
+import Learning from "../../resources/Learning.svg";
 
 const Experience = () => {
     const { t } = useTranslation("experience");
@@ -66,6 +68,7 @@ const Experience = () => {
                     })}
                 </div>
             </div>
+            <img className={styles.workingImage} src={getImagePath(Learning)} alt="Person learning by reading a book"/>
             {/*
             <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-out-sine">
                 <h3>{t("courses")}</h3>

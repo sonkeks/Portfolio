@@ -32,7 +32,7 @@ const ImprintModal = forwardRef<ModalHandle>((props,ref) => {
                 </div>
                 <h3>{t("imprint")}</h3>
                 <div>Sönke Schaarschmidt</div>
-                <div>Meyerbeerstraße 123</div>
+                <div>Stockholmer Str. 1</div>
                 <div>{t("address")}</div>
                 <div>soenke.schaarschmidt@gmx.de</div>
                 <h3>{t("disclaimer")}</h3>

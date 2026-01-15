@@ -16,19 +16,19 @@
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
 }
 .parallax > use:nth-child(1) {
-    fill: rgba(38, 116, 208, 0.2);
+    fill: oklch(from var(--primary-light) l c h / 0.5);
     animation-delay: -2s;
-    animation-duration: 7s;
+    animation-duration: 12s;
 }
 .parallax > use:nth-child(2) {
-    fill: rgba(38, 116, 208, 0.2);
+    fill: oklch(from var(--primary) l c h / 0.5);
     animation-delay: -3s;
-    animation-duration: 10s;
+    animation-duration: 15s;
 }
 .parallax > use:nth-child(3) {
-    fill: rgba(38, 116, 208, 0.2);
+    fill: oklch(from var(--primary-shade) l c h / 0.5);
     animation-delay: -4s;
-    animation-duration: 13s;
+    animation-duration: 18s;
 }
 .parallax > use:nth-child(4) {
     fill: var(--tertiary);

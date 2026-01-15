@@ -1,9 +1,10 @@
 body {
   --color-background: #F9F9F9;
   --color-text: #282828;
-  --primary: #2674D0;
-  --primary-light: #90b4e0;
-  --primary-shade: #1f5fab;
+  --primary-c: 148.42; /* 255.31 */
+  --primary: oklch(0.5614 0.1603 var(--primary-c));
+  --primary-light: oklch(0.7594 0.0748 var(--primary-c));
+  --primary-shade: oklch(0.4872 0.1373 var(--primary-c));
   --secondary: #677684;
   --secondary-light: #9cafbb;
   --secondary-shade: #3f4854;
@@ -46,9 +47,10 @@ img, video {
 body.dark {
   --color-background: #282828;
   --color-text: #F9F9F9;
-  --primary: #2689d0;
-  --primary-light: #79abd0;
-  --primary-shade: #2775ab;
+  --primary-c: 148.42; /* 243.42 */
+  --primary: oklch(0.6091 0.1388 var(--primary-c));
+  --primary-light: oklch(0.7197 0.0759 var(--primary-c));
+  --primary-shade: oklch(0.5413 0.1125 var(--primary-c));
   --secondary: #677684;
   --secondary-light: #9cafbb;
   --secondary-shade: #3f4854;

@@ -1,6 +1,7 @@
 .container {
     margin-top: 80px;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .container h3 {
@@ -11,7 +12,21 @@
   margin-top: 40px;
 }
 
+.workingImage {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  right: 0;
+  max-height: 500px;
+}
+
 .workBox details {
     padding: 0;
     transition: background-color 200ms;
+}
+
+@media screen and (max-width: 800px)  {
+  .workingImage {
+    display: none;
+  }
 }

@@ -11,6 +11,7 @@ import {useEffect} from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import {useTranslation} from "react-i18next";
+import {getImagePath} from "../../helpers/getImagePath";
 
 const Projects = () => {
     useEffect(() => {
@@ -18,14 +19,6 @@ const Projects = () => {
     }, []);
 
     const { t } = useTranslation("projects");
-
-    const getImagePath = (image: string) => {
-        if (process.env.NODE_ENV === "production") {
-            return `/soenke/build/${image}`;
-        } else {
-            return image;
-        }
-    }
 
     const featuredProjects = [
         {
