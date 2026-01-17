@@ -1,9 +1,4 @@
 import styles from "./Projects.module.css";
-import Blubble from "../../resources/BlubbleMockUp2.png";
-import Diver from "../../resources/Diver.png";
-import Barspot from "../../resources/Barspot.png";
-import Savorly from "../../resources/Savorly.png"
-import HistoryMap from "../../resources/HistoryMap.png";
 import Project from "./Project";
 import {scrollPageTo} from "../../helpers/scrollHelpers";
 import {IoBed, IoMusicalNote, IoNewspaper} from "react-icons/io5";
@@ -27,7 +22,7 @@ const Projects = () => {
             description: t("historyDescription"),
             info: t("historyInfo"),
             technologies: ["React", "Chakra UI", "TypeScript", "Wikidata", "SPARQL"],
-            image: getImagePath(HistoryMap),
+            image: getImagePath("HistoryMap", "png"),
             shadow: true,
             git: "https://github.com/sonkeks/M-MI_InteractiveHistoryMap",
             link: "https://sonkeks.github.io/M-MI_InteractiveHistoryMap/#/collections"
@@ -38,7 +33,7 @@ const Projects = () => {
             description: t("savorlyDescription"),
             info: t("savorlyInfo"),
             technologies: ["React Native", "Expo", "Spring", "PostgreSQL", "TypeScript"],
-            image: getImagePath(Savorly),
+            image: getImagePath("Savorly", "png"),
             shadow: false,
             git: "https://gitlab.bht-berlin.de/sosc7662/ewd-app",
             link: ""
@@ -62,7 +57,7 @@ const Projects = () => {
             description: t("diverDescription"),
             info: t("diverInfo"),
             technologies: ["Python", "SpaCy", "Custom Search JSON API", "React"],
-            image: getImagePath(Diver),
+            image: getImagePath("Diver", "png"),
             shadow: true,
             git: "https://github.com/sonkeks/diver-bachelor-thesis?tab=readme-ov-file",
             link: ""
@@ -73,7 +68,7 @@ const Projects = () => {
             description: t("blubbleDescription"),
             info: t("blubbleInfo"),
             technologies: ["React", "Ionic", "Capacitor", "Firebase", "Socket.io", "Docker"],
-            image: getImagePath(Blubble),
+            image: getImagePath("Blubble", "png"),
             shadow: false,
             git: "https://github.com/Diva-E-HTW-BookClub/Diva-E-BookClub",
             link: "https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"

@@ -1,7 +1,7 @@
 body {
   --color-background: #F9F9F9;
   --color-text: #282828;
-  --primary-c: 148.42; /* 255.31 */
+  --primary-c: 148.42; /* 255.31 */ /* oklch(0.7594 0.0748 148.42) */
   --primary: oklch(0.5614 0.1603 var(--primary-c));
   --primary-light: oklch(0.7594 0.0748 var(--primary-c));
   --primary-shade: oklch(0.4872 0.1373 var(--primary-c));

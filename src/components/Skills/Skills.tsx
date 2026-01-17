@@ -14,7 +14,6 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import {useTranslation} from "react-i18next";
 import {getImagePath} from "../../helpers/getImagePath";
-import Coding from "../../resources/Coding.svg";
 
 const LANGUAGES = [
     "Java",
@@ -160,7 +159,7 @@ const Skills = () => {
                 <DiPython/>
             </div>
             <div className={styles.imageContainer}>
-              <img className={styles.skillsImage} src={getImagePath(Coding)} alt="Person coding on a lap top"/>
+              <img className={styles.skillsImage} src={getImagePath("Coding", "svg")} alt="Person coding on a lap top"/>
             </div>
         </div>
     )
